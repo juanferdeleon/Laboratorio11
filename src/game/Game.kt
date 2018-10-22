@@ -8,7 +8,6 @@ class Game (var narrator: Narrator,
             val dire: Team,
             var isRadiantTurn: Boolean = true)
 {
-    
     fun radiantAncientDown(){
         radiant.ancientDown()
     }
