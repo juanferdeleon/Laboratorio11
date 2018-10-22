@@ -34,4 +34,8 @@ class Team constructor (
     fun ancientDown(){
         this.ancient.isDead = !ancient.isDead
     }
+
+    fun checkAncient(): Boolean{
+        return ancient.isDead
+    }
 }

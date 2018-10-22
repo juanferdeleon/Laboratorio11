@@ -155,7 +155,14 @@ fun main(args: Array<String>) {
                 }
             }
             game.changeTurn()
-
+        }
+        if(game.checkWinner(game.radiant)){
+            print("Dire ha ganado!")
+            gameOp = "3"
+        }
+        if(game.checkWinner(game.dire)){
+            print("Radiant ha ganado!")
+            gameOp = "3"
         }
     }
 

@@ -43,4 +43,8 @@ class Game (var narrator: Narrator,
         this.isRadiantTurn = !isRadiantTurn
     }
 
+    fun checkWinner(team: Team): Boolean{
+        return team.checkAncient()
+    }
+
 }
