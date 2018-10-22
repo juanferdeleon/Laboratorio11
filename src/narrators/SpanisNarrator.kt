@@ -5,12 +5,14 @@ import behaviors.Behavior
 class SpanisNarrator(name: String): Narrator(name), Behavior{
     override fun narrate(eventType: String): String {
         when(eventType){
-            "welcome" -> return "Bienvenidos a DOTA 2!"
-            "gamebegins" -> return "Que comience el juego!"
-            "kill" -> return "Ha ocurrido una muerte!"
-            "towerDown" -> return "Una torre ha caido!"
-            "radiantWins" -> return "Radiant ha ganado!"
-            "direWins" -> return "Deri ha ganado!"
+            "welcome" -> return "\nBienvenidos a DOTA 2!\n"
+            "gamebegins" -> return "\nQue comience el juego!\n"
+            "kill" -> return "\nHa ocurrido una muerte!\n"
+            "towerDown" -> return "\nUna torre ha caido!\n"
+            "ancientDown" -> return "\nThe Ancient has fallen!\n"
+            "radiantWins" -> return "\nRadiant ha ganado!\n"
+            "direWins" -> return "\nDeri ha ganado!\n"
+            "exit" -> return "\nHasta la proxima amigo!\n"
         }
         return ""
     }

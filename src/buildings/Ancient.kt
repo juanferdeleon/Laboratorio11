@@ -1,3 +1,3 @@
 package buildings
 
-data class Ancient (val isDead: Boolean = false)
+data class Ancient (var isDead: Boolean = false)

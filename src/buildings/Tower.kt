@@ -1,3 +1,3 @@
 package buildings
 
-data class Tower(val isDead: Boolean)
+data class Tower(var isDead: Boolean = false)
